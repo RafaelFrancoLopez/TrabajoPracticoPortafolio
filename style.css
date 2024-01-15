@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F3 !important;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/*   HEADER   */
+
+.navbar{
+    background-color: #ECF0F3 !important;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand{
+    margin-left: 10%;
+}
+
+.navbar-toggler{
+    margin-bottom: 30px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-link{
+    height: auto;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: rgb(255, 0, 72);
+    border: 1px solid none;
+    border-radius: 5px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+}
+
+/*    MAIN    */
+
+main{
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.presentacion{
+    height: 500px;
+    width: 400px;
+}
+
+.descripcion h3{
+    font-size: 15px;
+    color: #666666;
+}
+
+.descripcion h2{
+    font-size: 40px;
+}
+
+.descripcion span{
+    color: rgb(255, 0, 72);
+}
+
+.descripcion p{
+    font-size: 15px;
+    color: #666666;
+}
+
+main .redes{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.redes h3{
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.find-me a, .best-skill a{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1 solid ;
+    border-radius: 5px;
+    box-shadow:  -3px -3px 10px white, 3px 3px 10px #E0E0E0, inset 3px 3px 10px #E0E0E0, inset -3px -3px 10px white;
+}
+
+.img-perfil{
+    height: 390px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #bababa;
+}
+
+/*     Separacion    */
+
+.linea-separadora{
+    height: 1px;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+/*     SECTION WHAT I DO     */
+
+.what-i-do, .portfolio  {
+    width: 900px;
+    margin: 100px auto;   
+}
+
+/*todos los pre-titulos*/
+.pre-titulo{
+    font-size: 12px;
+    color: rgb(255, 0, 72);
+    text-align: center;
+}
+
+
+/*todos los titulos*/
+.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.contenedor{
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+ .tarjeta{
+    height: 200px;
+    width: 230px;
+    margin: 10px 20px;
+    padding: 50px 30px;
+    border-radius: 5px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tarjeta h3{
+    font-size: 18px;
+}
+
+.tarjeta p{
+    font-size: 13px ;
+    font-weight: 500;
+    text-align: left ;
+}
+
+.icon{
+    color: rgb(255, 0, 72);
+}
+
+/*     PORTFOLIO     */
+
+.portfolio .contenedor .tarjeta, .my-blog .contenedor .tarjeta{ /*tambien llamo a las tarjetas de MY-BLOG para editarlas desde acá*/
+    height: 280px;
+    width: 250px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.tarjeta img{
+    border-radius: 5px;
+    height: 140px;
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+.tarjeta span{
+    text-align: left;
+    font-size: 10px;
+    color: rgb(255, 0, 72);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.portfolio .tarjeta p{
+    font-weight: 600;
+} 
+
+/*     RESUME EXP    */
+
+.resume-exp {
+    width: 900px;
+    margin: 100px auto;   
+}
+
+.resume-exp h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.items-resume{
+    display: flex;
+    height: 50px;
+    width: 850px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0;
+}
+
+.items-resume button{
+    width: 25%;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.items-resume button:hover{
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+    color: rgb(255, 0, 72);
+}
+
+/*     FILAS EDUCACION Y EXPERIENCIA   */
+
+.container-resume{
+    display: flex;
+    justify-content: center;
+}
+
+.container-resume .years{
+    text-align: left;
+    font-size: 10px;
+    color:  rgb(255, 0, 72);
+}
+
+.container-resume h2{
+    font-size: 30px;
+    text-align: left;
+}
+
+.contenedor-info{
+    width: 380px;
+    height: 220px;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px 15px;
+    margin: 30px 20px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+}
+
+.contenedor-info div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 30px 20px;
+}
+
+.contenedor-info p{
+    margin: 20px;
+}
+
+.contenedor-info h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contenedor-info span{
+    font-size: 10px;
+}
+
+.contenedor-info p{
+    font-size: 12px;
+}
+
+.container-linetime{
+    position: relative;
+}
+
+.cajita{
+    width: 45px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(255, 0, 72);
+    background-color: white !important;
+    border-radius: 5px;
+    box-shadow:  -3px -3px 8px #E0E0E0, 5px 5px 10px #E0E0E0;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+/*      Linea de tiempo    */
+
+.circulo{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #bababa;
+    background-color: white !important;
+    border-radius: 50px;
+    position: absolute;
+    left: -46px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+}
+
+.linea-chica{
+    width: 12px;
+    height: 1px;
+    border: 1px solid #bababa;
+    position: absolute;
+    left: -32px;
+    top: 26px; 
+}
+
+.container-linetime::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 84%;
+    top: 90px;
+    background-color: #bababa !important;
+}
+
+/*     SECTION MY BLOG     */
+
+
+.my-blog, .contact {
+    width: 900px;
+    margin: 100px auto;  
+    text-align: center; 
+}
+
+.my-blog .contenedor{
+    display: flex;
+}
+
+.span-pink{
+    color: rgb(255, 0, 72);
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.span-grey{
+    color: #666666 !important;
+    font-size: 10px;
+}
+
+.contenedor-span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-my-blog{
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: left ;
+    margin-bottom: 20px;
+}
+
+
+/*     SECTION CONTACT WITH ME    */
+
+ .contact .contenedor{
+    display: flex;
+    gap: 35px;
+} 
+
+/*     DATOS CONTACTO    */
+
+.datos-contacto{
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+}
+
+.datos-contacto img{
+    width: 260px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.datos-contacto h3{
+    margin-top: 13px;
+}
+
+.datos-contacto span{
+    font-weight: 700px;
+    margin-bottom: 15px;
+}
+
+.datos-contacto p{
+    font-size: 12px;
+}
+
+/*    FORMULARIO CONTACTO    */
+
+.formulario-contact{
+    width: 480px;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    text-align: start;
+    border-radius: 5px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+}
+
+.name-phone{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+input{
+    height: 30px;
+    border: 1px solid #bababa;
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 150px;
+    border: 1px solid #bababa;
+    background-color: white !important;
+    border-radius: 5px;
+    resize: none;
+    padding: 5px;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0px;
+}
+
+.boton-mensaje{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 0, 72) !important;
+}
+
+/*     FOOTER    */
+
+footer{
+    width: 80%;
+    margin: 100px auto;  
+    text-align: center; 
+}
+
+footer img{
+    height: 70px;
+    width: 65px;
+    border-radius: 50px;
+    margin-bottom: 20;
+}
+
+.footer-1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer-2{
+    font-size: 20px ;
+    font-weight: 500;
+}
+
+    /* MEDIA QUERIES    */
+
+ @media screen and (max-width: 768px) {
+
+    .navbar{
+        width: 10% ;
+    }
+
+    .navbar-nav {
+        width: 90%; 
+    }
+
+    /*MAIN*/
+
+    main{
+        width: 600px;
+        margin: 70px 80px;
+        justify-content: space-between;
+    }
+
+    .presentacion{
+        height: 400px;
+        width: 300px;
+    }
+
+    main .redes{
+        margin-top: 60px;
+    }
+    
+    .find-me a, .best-skill a{
+        padding: 7px 12px;
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    
+    .img-perfil{
+        height: 300px;
+        width: 230px;
+    }
+
+    /*SECTIONS*/
+
+    .what-i-do, .portfolio, .resume-exp, .my-blog, .contact {
+        width: 700px;
+        margin: 60px auto;
+    }
+
+    .contenedor{
+        width: 630px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+
+     /*EXPERIENCIA Y RESUMEN*/
+
+    .items-resume{
+        width: 600px;
+        margin: 20px auto;
+    }
+
+   /* FILAS EDUCACION Y EXPERIENCIA*/
+
+    .container-resume{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .contenedor-info{
+        width: 380px;
+        height: 180px;
+        position: relative;
+    }
+
+    .contenedor-info div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-info p{
+        margin: 15px;
+    }
+
+    .contenedor-info span, .contenedor-info p{
+        font-size: 10px;
+    }
+
+    .container-linetime{
+        position: relative;
+    }
+
+    /*FORMULARIO*/
+
+    .formulario-contact{
+        width: 300px;
+        padding: 10px 15px;
+    }
+
+    .name-phone label{
+        font-size: 15px;
+        width: 127px;
+        display: flex;
+    }
+
+    label {
+        font-size: 15px;
+        width: 270px;
+    }
+
+    }
+
+ @media screen and (max-width: 620px){
+
+    .navbar{
+        width: 350px ;
+        margin: 20px auto;
+    }
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main{
+        width: 400px;
+        height: 800px;
+        margin: 30px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-i-do, .portfolio, .resume-exp, .my-blog, .contact {
+        width: 400px;
+        margin: 30px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        /*todos los pre-titulos*/
+    .pre-titulo{
+        font-size: 10px;
+        margin: auto 100px;
+    }
+
+    /*todos los titulos*/
+    .titulo{
+        font-size: 30px;
+    }
+
+    /*EXPERIENCIA Y RESUMEN*/
+
+        
+    .resume-exp h2{
+        font-size: 30px;
+    }
+
+    .items-resume{
+        width: 380px;
+    }
+
+    .items-resume button{
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .container-resume h2{
+    font-size: 20px;
+    }
+
+    /*     FILAS EDUCACION Y EXPERIENCIA   */
+
+    .container-resume{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-resume h2{
+        font-size: 20px;
+    }
+
+    .contenedor-info{
+        width: 300px;
+        height: 200px;
+        position: relative;
+    }
+
+    .cajita{
+        width: 35px;
+        height: 20px;
+        padding: 2px;
+        text-align: center;
+        font-size: 8px;
+        position: absolute;
+        top: 70px;
+        right: 15px;
+    }
+
+ }
+
+
+ 
