@@ -116,7 +116,9 @@
       </div>
 
       <div class="contenedor-img">
-        <img class="img-perfil" src="./fotos/foto.jpeg" alt="foto" />
+        <img class="img-perfil" src="./fotos/foto.jpeg" id="img-main" alt="foto" />
+        <img class="img-perfil foto-main-2" src="./fotos/fotoMain2.jpg" id="img-main-2" alt="foto" />
+
       </div>
     </main>
 
@@ -130,9 +132,11 @@
       <h3 class="pre-titulo">FEATURES</h3>
       <h2 class="titulo">What I do</h2>
 
-      <div class="contenedor">
+      <div class="contenedor-slider">
 
-        <div class="tarjeta">
+        <div class="contenido-slide">
+
+        <div class="tarjeta" id="caja-1">
           <i class="icon fa-solid fa-bars"></i>
           <h3>Business Stratagy</h3>
           <p>
@@ -140,7 +144,7 @@
           </p>
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" id="caja-2">
           <i class="icon fa-solid fa-book-open"></i>
           <h3>App Development</h3>
           <p>
@@ -148,17 +152,15 @@
           </p>
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" id="caja-3">
           <i class="icon fa-solid fa-tv"></i>
           <h3>App Development</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
         </div>
-        </div>
-      
-        <div class="contenedor">
-        <div class="tarjeta">
+        
+        <div class="tarjeta" id="caja-4">
           <i class="icon fa-regular fa-message"></i>
           <h3>Mobile App</h3>
           <p>
@@ -166,7 +168,7 @@
           </p>
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" id="caja-5">
           <i class="icon fa-solid fa-wifi"></i>
           <h3>CEO Marketing</h3>
           <p>
@@ -174,13 +176,19 @@
           </p>
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" id="caja-6">
           <i class="icon fa-solid fa-fan"></i>
           <h3>Personal Portfolio</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
         </div>
+
+      </div>
+
+      <button class="boton-antes btn-slider" id="btn-right">&#9665</button>
+      <button class="boton-proximo btn-slider" id="btn-left">&#9655</button>
+
       </div>
     </section>
 
@@ -201,6 +209,20 @@
           <p>
             Services provide for design 
           </p>
+          <button class="boton-js">Saber más</button>
+        </div>
+
+        <div class="tarjeta-oculta">
+          <img src="./fotos/foto3.jpg" alt="imagen">
+          <span>Development</span>
+          <p>
+            Services provide for design 
+          </p>
+          <p class="p-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Odit, libero perferendis sed eius inventore reiciendis, quas
+             </p>
+          <a href="github.com" target="_blank">GitHub</a>
+          <button class="boton-cerrar">X</button>
         </div>
 
         <div class="tarjeta">
@@ -209,6 +231,20 @@
           <p>
             Mobile app landing design & app maintain 
           </p>
+          <button class="boton-js">Saber más</button>
+        </div>
+
+        <div class="tarjeta-oculta">
+          <img src="./fotos/foto2.jpg" alt="imagen">
+          <span>Application</span>
+          <p>
+            Mobile app landing design & app maintain
+          </p>
+          <p class="p-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Odit, libero perferendis sed eius inventore reiciendis, quas
+             </p>
+          <a href="github.com" target="_blank">GitHub</a>
+          <button class="boton-cerrar">X</button>
         </div>
 
         <div class="tarjeta">
@@ -217,7 +253,21 @@
           <p>
             Logo design creativity & Application
           </p>
+          <button class="boton-js">Saber más</button>
         </div>
+        <div class="tarjeta-oculta">
+          <img src="./fotos/foto3.jpg" alt="imagen">
+          <span>Photoshop</span>
+          <p>
+           Logo design creativity & Application
+          </p>
+          <p class="p-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Odit, libero perferendis sed eius inventore reiciendis, quas
+             </p>
+          <a href="github.com" target="_blank">GitHub</a>
+          <button class="boton-cerrar">X</button>
+        </div>
+
       </div>
 
       <div class="contenedor">
@@ -227,6 +277,20 @@
           <p>
             Mobile app landing design & services 
           </p>
+          <button class="boton-js">Saber más</button>
+        </div>
+
+        <div class="tarjeta-oculta">
+          <img src="./fotos/foto2.jpg" alt="imagen">
+          <span>Figma</span>
+          <p>
+            Mobile app landing design & app maintain
+          </p>
+          <p class="p-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Odit, libero perferendis sed eius inventore reiciendis, quas
+             </p>
+          <a href="github.com" target="_blank">GitHub</a>
+          <button class="boton-cerrar">X</button>
         </div>
 
         <div class="tarjeta">
@@ -235,15 +299,44 @@
           <p>
             Design for tecnology & services 
           </p>
+          <button class="boton-js">Saber más</button>
+        </div>
+
+        <div class="tarjeta-oculta">
+          <img src="./fotos/foto2.jpg" alt="imagen">
+          <span>Web Design</span>
+          <p>
+            Design fot tecnology & services
+          </p>
+          <p class="p-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Odit, libero perferendis sed eius inventore reiciendis, quas
+             </p>
+          <a href="github.com" target="_blank">GitHub</a>
+          <button class="boton-cerrar">X</button>
         </div>
 
         <div class="tarjeta">
+          <img src="./fotos/foto3.jpg" alt="imagen">
+          <span>Web Design</span>
+          <p>
+            App for tecnology & services
+          </p>
+          <button class="boton-js">Saber más</button>
+        </div>
+
+        <div class="tarjeta-oculta">
           <img src="./fotos/foto2.jpg" alt="imagen">
           <span>Web Design</span>
           <p>
             App for tecnology & services
           </p>
+          <p class="p-oculto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Odit, libero perferendis sed eius inventore reiciendis, quas
+             </p>
+          <a href="github.com" target="_blank">GitHub</a>
+          <button class="boton-cerrar">X</button>
         </div>
+
       </div>
     </section>
 
@@ -460,16 +553,16 @@
             <div class="name-phone">
               <label for="name">
                   <span>Name</span>
-                  <input id="name" class="text">
+                  <input id="name" class="text" required>
               </label>
               <label for="phone">
                   <span>Phone Number</span>
-                  <input id="phone" class="Number">
+                  <input id="phone" class="Number" required>
               </label>
           </div>
           <label for="email">
               <span>Email</span>
-              <input id="email" class="email">
+              <input id="email" class="email" required>
           </label>
           <label for="subjet">
             <span>Subjet</span>
@@ -477,10 +570,11 @@
           </label>
           <label for="message">
             <span>Your Message</span>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" required></textarea>
           </label>
 
-          <button class="boton-mensaje">SEND MESSAGE</button>
+          <button class="boton-mensaje" id="boton-enviado">SEND MESSAGE</button>
+          <p class="mensaje-enviado-oculto" id="mensaje-enviado">Mensaje enviado con éxito!</p>
 
           </form>
         </div>
@@ -499,5 +593,6 @@
 
     </footer>
 
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -114,6 +114,14 @@ main .redes{
     box-shadow:  -5px -5px 10px white, 5px 5px 10px #bababa;
 }
 
+.foto-main{
+    display: block;
+}
+
+.foto-main-2{
+    display: none;
+}
+
 /*     Separacion    */
 
 .linea-separadora{
@@ -144,7 +152,6 @@ main .redes{
 }
 
 .contenedor{
-    width: 900px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +171,34 @@ main .redes{
     gap: 10px;
 }
 
+/*TAREA SLIDER*/
+.contenedor-slider{
+    width: 780px;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+    justify-content: space-around;
+}
+
+.contenedor-slider .contenido-slide{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.contenedor-slider .tarjeta{
+    height: 200px;
+    width: 230px;
+    margin: 10px 15px;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 10px;
+}
+
 .tarjeta h3{
     font-size: 18px;
 }
@@ -178,23 +213,47 @@ main .redes{
     color: rgb(255, 0, 72);
 }
 
+.boton-antes, .boton-proximo{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: rgb(255, 0, 72) ;
+    background-color: white !important;
+    border-radius: 50%;
+}
+
+.boton-antes{
+    position: absolute;
+    top: 100px;
+    left: -2px;
+}
+
+.boton-proximo{
+    position: absolute;
+    top: 100px;
+    right: -2px;
+}
+
 /*     PORTFOLIO     */
 
-.portfolio .contenedor .tarjeta, .my-blog .contenedor .tarjeta{ /*tambien llamo a las tarjetas de MY-BLOG para editarlas desde acá*/
-    height: 280px;
+.portfolio .contenedor .tarjeta {
+    height: 300px;
     width: 250px;
     padding: 20px;
     display: inline-block;
+    position: relative;
 }
 
-.tarjeta img{
+.tarjeta img, .tarjeta-oculta img{
     border-radius: 5px;
     height: 140px;
     width: 210px;
     margin-bottom: 10px;
 }
 
-.tarjeta span{
+.tarjeta span, .tarjeta-oculta span{
     text-align: left;
     font-size: 10px;
     color: rgb(255, 0, 72);
@@ -202,9 +261,67 @@ main .redes{
     margin-bottom: 10px;
 }
 
-.portfolio .tarjeta p{
+.portfolio .tarjeta p, .tarjeta-oculta p{
     font-weight: 600;
-} 
+    font-size: 13px;
+}
+
+/*BOTON SABER MAS TAREA JS*/
+
+.boton-js{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0;
+    position: absolute;
+    bottom: 20px;
+}
+
+.boton-js:hover{
+    color: rgb(255, 0, 72);
+}
+
+.tarjeta-oculta {
+    height: 400px;
+    width: 255px;
+    padding: 25px 20px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.tarjeta-oculta .p-oculto{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.tarjeta-oculta a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600px;
+}
+.tarjeta-oculta a:hover{
+    color: rgb(255, 0, 72);
+}
+
+.tarjeta-oculta button{
+    border: none;
+    border-radius: 5px;
+    background-color: #ECF0F3;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 
 /*     RESUME EXP    */
 
@@ -240,6 +357,7 @@ main .redes{
     box-shadow:  -5px -5px 10px white, 5px 5px 10px #E0E0E0, inset 5px 5px 10px #E0E0E0, inset -5px -5px 10px white;
     color: rgb(255, 0, 72);
 }
+
 
 /*     FILAS EDUCACION Y EXPERIENCIA   */
 
@@ -344,6 +462,13 @@ main .redes{
 }
 
 /*     SECTION MY BLOG     */
+
+.my-blog .contenedor .tarjeta{ 
+    height: 280px;
+    width: 250px;
+    padding: 20px;
+    display: inline-block;
+}
 
 
 .my-blog, .contact {
@@ -470,6 +595,15 @@ label {
     border-radius: 5px;
     color: white;
     background-color: rgb(255, 0, 72) !important;
+    display: block;
+}
+
+.mensaje-enviado-oculto{
+    color: rgb(255, 0, 72);
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0;
+    display: none;
 }
 
 /*     FOOTER    */
